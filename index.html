@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sports Equipment Shop</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<style>
+</style>
+</head>
+<body>
+	
+	<!-- Header start -->
+	<div class="head">
+	<h1>
+	<a href="index.html">
+	Sports <div id = "color">Equipment</div> Shop
+	</a>
+	</h1>
+	<nav>
+	  <a href="index.html">Home</a> &emsp; &emsp;
+	  <a href="Products1.html">Shop</a> &emsp; &emsp;
+	  <a href="Contact Us.html">Contact us</a>
+	</nav><br /><br />
+	<hr />
+	</div>
+	<!-- Header end -->
+	<!-- Sidebar start -->
+	<div id="wrapper">
+	<div class="sidebar">
+	   <form method="post" action="">
+	   <input type="search" placeholder="Search">
+	   <br />
+	   <hr />
+	   </form>
+	 
+	   <h3>Products</h3>
+	   <details>
+	   	<summary>New Arrivals</summary>
+	   	<a href="Products1.html"> &emsp;
+	   	Jerseys<br />
+	   	</a>
+	   	<a href="Products1.html"> &emsp;
+	   	Shoes</a><br />
+	   	<a href="Products2.html"> &emsp;
+	   	Accessories</a><br />
+	   </details>
+	   <details>
+	   <summary>Sales</summary>
+	   	<a href="Products1.html"> &emsp;
+	   	Jerseys<br />
+	   	</a>
+	   	<a href="Products2.html"> &emsp;
+	   	Shoes</a><br />
+	   	<a href="Products1.html"> &emsp;
+	   	Accessories</a><br />
+	   </details>
+	   <details>
+	   <summary>Male</summary>
+	   	<a href="Products1.html"> &emsp;
+	   	Jerseys<br />
+	   	</a>
+	   	<a href="Products2.html"> &emsp;
+	   	Shoes</a><br />
+	   	<a href="Products1.html"> &emsp;
+	   	Accessories</a><br />
+	   </details>
+	   <details>
+	   <summary>Female</summary>
+	   	<a href="Products1.html"> &emsp;
+	   	Jerseys<br />
+	   	</a>
+	   	<a href="Products1.html"> &emsp;
+	   	Shoes</a><br />
+	   	<a href="Products1.html"> &emsp;
+	   	Accessories</a><br />
+	   </details>
+	   <details>
+	   <summary>Brands</summary>
+	   	<a href="Products1.html"> &emsp;
+	   	Jerseys<br />
+	   	</a>
+	   	<a href="Products1.html"> &emsp;
+	   	Shoes</a><br />
+	   	<a href="Products1.html"> &emsp;
+	   	Accessories</a><br />
+	   </details>
+	   
+	   
+	  	</div>
+	<!-- Sidebar end-->
+	<div class="front">
+	<h2>Promotions</h2><h2><button onclick="plusDivs(-1)">&#10094;</button>
+	<button onclick="plusDivs(+1)">&#10095;</button>
+	</h2>
+	<img align class="mySlides" src="img/adidas_1_aotw.jpg" width ="440">
+	<img class="mySlides" src="img/adidas_2_aotw.jpg" width ="440">
+	<img class="mySlides" src="img/adidas_3_aotw.jpg" width ="440">
+	
+	</div>
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+	
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+	
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+	</script>
+	
+	<br />
+	<hr />
+	<footer>
+		<br />
+	</footer>
+	</div>
+	
+</body>

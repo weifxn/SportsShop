@@ -1,0 +1,27 @@
+#fixed-nav a p {
+	display: inline;
+	
+}
+
+#fixed-nav {
+	position: fixed;
+	background-color: #000;
+	color: #fff;
+	
+}
+
+#fixed-nav a {
+	color: #fff;
+	text-decoration: none;
+
+}
+
+#wrapper {
+	text-align: center;
+}
+
+.nav {
+	display: inline;
+	white-space: nowrap;
+}
+

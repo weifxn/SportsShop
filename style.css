@@ -14,7 +14,6 @@ b {padding-left:90px;}
 	
 	text-align: center;
 	background-color:#000000;
-	margin-left: 50px;
 }
 .head a{
 	color:#fff;
@@ -50,11 +49,13 @@ b {padding-left:90px;}
 	color: rgba(220, 75, 75, 0.77);
 	display: inline-block;
 }
+#color:hover {
+	color: #fff;
+	
+}
 
 h1 {
 	font: 70px myFirstFont;
-	
-	
 	margin-top: -1%;
 	padding-top: 1%;
 	margin-bottom: 22px;
@@ -113,12 +114,13 @@ a {
 	box-sizing: border-box;
 	background-color: #ffffff;
 	margin-right: -11%;
-color:#000;
+	color:#000;
+	padding-left: 50px;
 }
 
 a:hover {
 	
-	font-size: 95%;
+	color: rgba(220, 75, 75, 0.77);
 	
 }
 #tableoverflow {

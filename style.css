@@ -17,11 +17,6 @@ b {padding-left:90px;}
 	background-color:#000000;
 }
 
-summary {
-	font-size: 13px;
-	padding-bottom: 10px;
-}
-
 .head a{
 	color:#fff;
 	
@@ -85,6 +80,10 @@ nav {
 
 h2 {
 	text-align: center;
+}
+body {
+	
+	
 }
 
 #wrapper {

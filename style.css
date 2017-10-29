@@ -1,9 +1,9 @@
 p {color:#FF0000;
 	font-weight:bold;
 	font-type:Arial,sans-serif;
-padding-left:120px;}
-h4 {padding-left:90px;}
-b {padding-left:90px;}
+text-align:center;}
+h4 {text-align:center}
+b {padding-left:110px;}
 
 #wrapperform {
 	position: inherit;
@@ -138,3 +138,5 @@ table {
 	z-index: -1;
 	margin: 0 auto;
 }
+
+.formgroup {padding-left:100px;}

@@ -37,43 +37,35 @@
 <div class = "whitespace"></div>
 
 
-<h1 class="itemTitle">Accessories</h1>
-<div class="allItems">
-<div class="items"><img src="img/football.jpg" alt="Football" width="320px" height="300px">
-<h4>Football</h4>
-<h4>RM 60.00</h4>
-</div>
-<div class="items"><img src="img/keepinggloves.jpg" alt="Keeper Gloves" width="320px" height="300px">
-<h4>Goal Keeper Gloves</h4>
-<h4>RM 50.00</h4>
-</div>
-<div class="items"><img src="img/waterbottle.jpg" alt="Water Bottle" width="320px" height="300px">
-<h4>Water Bottle</h4>
-<h4>RM 12.00</h4>
-</div>
- 
- 
-<div class="items"><img src="img/bag.jpg" alt="Football Bag" width="320px" height="300px">
-<h4>Football Bag</h4>
-<h4>RM 55.00</h4>
-</div>
-
-<div class="items"><img src="img/cap.jpg" alt="Cap" width="320px" height="300px">
-<h4>Cap</h4>
-<h4>RM 30.00</h4>
-</div>
-<div class="items"><img src="img/wristband.jpg" alt="Wrist Band" width="320px" height="300px">
-<h4>Wristband</h4>
-<h4>RM 15.00</h4>
-</div>
-
- 
- 
-<div class="items"><img src="img/bag.jpg" alt="Football Bag" width="320px" height="300px">
-<h4>Football Bag</h4>
-<h4>RM 55.00</h4>
-
-</div>
+<h1 class="itemTitle">Home</h1>
+<div class="formWrapper">
+<div class="items"><h2><button onclick="plusDivs(-1)">&#10094;</button>
+	<button onclick="plusDivs(+1)">&#10095;</button>
+	</h2>
+	<img align class="mySlides" src="img/adidas_1_aotw.jpg" width ="440">
+	<img class="mySlides" src="img/adidas_2_aotw.jpg" width ="440">
+	<img class="mySlides" src="img/adidas_3_aotw.jpg" width ="440">
+	
+	</div>
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+	
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+	
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+	</script>
 </div>
 </div>
 </body>

@@ -1,0 +1,125 @@
+.items {
+	
+	z-index: 3;
+	display: inline-block;
+	padding: 20px;
+}
+
+.allItems {
+	
+	padding-top: 550px;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	position: absolute;
+	
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	-webkit-column-width: 400px;
+	-moz-column-width: 400px;
+	column-width: 400px;
+}
+
+.whitespace
+{
+	width: 100%;
+	left: 0;
+	right: 0;
+	margin-top: 300px;
+	min-height: 200px;
+	padding-bottom: 4000px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ffffff;
+	z-index: 0;
+	position: absolute;
+	box-shadow: 0 -90px 120px rgba(1, 1, 1, 0.68);
+}
+
+
+#logo {
+	position: absolute;
+	height: 200;
+	top: 200;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	
+}
+.itemTitle {
+	top: 450px;
+	position: absolute;
+	z-index: 4;
+	margin: auto;
+	left: 0;
+	right: 0;
+	
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.shopTitle {
+	color: #000000;
+	text-shadow: 0 0 1px #ffffff;
+	background-color: rgba(255, 255, 255, 0.79);
+	width: 100%;
+	cursor: pointer;
+	display: inline-block;
+	padding-right: 4px;
+	position: relative;
+	text-align: center;
+}
+
+p {
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	top: 380;
+	color: #f2f2f2;
+	text-shadow: 0 0 8px #000000;
+}
+
+#bg {
+    width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+
+.navigation {
+	
+	padding: 20;
+	display: inline;
+	color: #f2f2f2;
+	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	z-index: 3;
+}
+
+.nav-wrapper {
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.85);
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	padding-top: 10;
+	padding-bottom: 10;
+	margin: -8;
+	z-index: 3;
+}
+.nav-wrapper-new {
+	z-index: 5;
+	position: fixed;
+	text-align: center;
+	margin: auto;
+	left: 0;
+	right: 0;
+}

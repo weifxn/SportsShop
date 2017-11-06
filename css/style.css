@@ -52,13 +52,12 @@
 	right: 0;
 	margin-top: 300px;
 	min-height: 200px;
-	padding-bottom: 4000px;
+	padding-bottom: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 	background-color: #ffffff;
 	z-index: 0;
 	position: absolute;
-	box-shadow: 0 -90px 120px rgba(1, 1, 1, 0.68);
 }
 
 
@@ -116,6 +115,7 @@ p {
 	top: 0;
 	left: 0;
 	z-index: -1;
+	min-width: 50%;
 }
 
 

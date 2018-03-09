@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contact US</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/dropdown.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	
+</head>
+<body>
+
+<img src="img/bgw.jpg" alt="running" id = "bg" />
+
+<div id= "title">
+<div class="nav-wrapper-new">
+<ul><li><a href="index.html" class="navcss">Home</a></li>
+  <li>
+    <a class = "navcss" onclick="void(0)">
+    Shop
+</a>
+    <ul>
+    <a class="shopTitle">Football</a>
+    <li><a href="jersey.html">Jersey</a></li>
+      <li><a href="shoes.html">Shoes</a></li>
+	  <li><a href="accessories.html">Accessories</a></li>
+     <a class="shopTitle">Running Shoes</a>
+    	<li><a href="maleRunningShoes.html">Male</a></li>
+    	<li><a href="femaleRunningShoes.html">Female</a></li>
+     <a class="shopTitle">Training</a>
+    	<li><a href="trainingmen.html">Men</a></li>
+    	<li><a href="trainingwomen.html">Women</a></li>
+		<li><a href="trainingkids.html">Kids</a></li>
+	 
+	
+    </ul>
+  </li>
+  <li><a href="contact.html" class="navcss">Contact</a></li>
+  <li><a href="cart.html" class="navcss">Cart</a></li>
+</ul>
+</div>
+
+
+<div class="formWrapper">
+<img src="img/logo.png" alt="logo" id="logo" />
+<div class = "whitespace">
+<h1 class="itemTitle">Contact Us!</h1>
+<div id="contact">
+	<h2>We want your experience with us to be worry-free!</h2>
+	Please contact us if you have any questions or encountered any problems when shopping with us.<br><br>
+		</div>
+	<div id="container">
+	<fieldset>
+	<b>EMAIL: </b><br><br><a href="mailto:dsportswebsite@gmail.com" class="email" title=" Send an email now?">dsportswebsite@gmail.com </a><br>
+	(We will reply to your inquiries within 2 working days)<br><br>
+	</fieldset>
+	<fieldset>
+	<b>PHONE: </b><br><br><a href="tel:0312345678" class="phoneNo" title="Call now?">03-12345678</a><br>
+	MON - FRI (Except public holiday): 9.00AM - 6.00PM<br><br>
+	</fieldset>
+	<fieldset>
+	<b>ADDRESS: </b><br><br><a href="https://www.google.com/maps/dir//Sunway+University,+Jalan+Universiti,+Bandar+Sunway,+Subang+Jaya,+Selangor/@3.0671557,101.5688707,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x31cc4c8f5912644b:0x77612fa0225cad69!2m2!1d101.6038902!2d3.0671563" class="address" title="Need a map?">
+	5, Jalan Universiti, Bandar Sunway, <br>47500 Subang Jaya,<br>Selangor, Malaysia.</a> 
+	</fieldset>
+	</div>
+	<br><br>
+	<div id="contact-form">
+	<form method ="get" action="index.html" onsubmit="alert('Succressfully submitted! THANK YOU!')">
+	<fieldset>
+	<legend align="center" class="form-title">CONTACT CUSTOMER SERVICE</legend>
+	
+	<div class="half left">
+	<input type="text" name="name" id="name" placeholder="First Name" required="" oninvalid="this.setCustomValidity('This field cant be blank!')" oninput="setCustomValidity('')"><br>
+	<input id="email" oninvalid="InvalidMsg(this);" name="email" oninput="InvalidMsg(this);" type="email" placeholder="Email" required="required"><br>
+
+	<label>Contact Preferences: &nbsp </label><select size="1" name="preference" id="preference" required>
+	<option value="" disabled selected hidden>--Contact Preference--</option>
+	<option>I prefer to be contacted through phone calls.</option>
+	<option>I prefer to be contacted through text.</option>
+	<option>I prefer to be contacted through email.</option>
+	</select><br><br>
+	
+	 </div>
+	 
+  <div class="half right">
+	<input type="text" name="name" id="name" placeholder="Last Name" required="" oninvalid="this.setCustomValidity('This field cant be blank!')" oninput="setCustomValidity('')"><br>
+	<input type="text" name="phone" id="phone" placeholder="Phone" required="" oninvalid="this.setCustomValidity('This field cant be blank!')" oninput="setCustomValidity('')"><br>
+	<label>Type of Query: &nbsp </label><select size="1" name="querytype" id="querytype" required>
+	<option value="" disabled selected hidden>--What's Your Concern?--</option>
+	<option>How to Shop</option>
+	<option>Order Related Concerns</option>
+	<option>Shipping Options</option>
+	<option>Delivery</option>
+	<option>Returns</option>
+	<option>Others</option>
+	</select><br><br>
+	</div>
+	<div id="message">
+		<textarea name="message" id="message" rows="10" col="40" placeholder="Message" required="" oninvalid="this.setCustomValidity('This field cant be blank!')" oninput="setCustomValidity('')"></textarea><br><br>
+	</div>
+	<div class="submit">
+	<input type="submit" value="SUBMIT"  id="submit-button" title="Please ensure that your information is correct so that we can respond to your enquiry.">
+	</div>
+	</fieldset>
+	</form>
+	</div>
+
+	</div>
+</div>
+
+<script>
+  function InvalidMsg(textbox) {
+    
+    if (textbox.value == '') {
+        textbox.setCustomValidity('Required email address');
+    }
+    else if(textbox.validity.typeMismatch){
+        textbox.setCustomValidity('please enter a valid email address');
+    }
+    else {
+        textbox.setCustomValidity('');
+    }
+    return true;
+}
+</script>
+
+</body>
+</html>

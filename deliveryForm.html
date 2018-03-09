@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Delivery Form</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/dropdown.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+	
+</head>
+<body>
+
+<img src="img/Running-Wallpaper-005.jpg" alt="running" id = "bg" />
+
+<div id= "title">
+<div class="nav-wrapper-new">
+<ul><li><a href="index.html" class="navcss">Home</a></li>
+  <li>
+    <a class = "navcss" onclick="void(0)">
+    Shop
+</a>
+    <ul>
+    <a class="shopTitle">Football</a>
+    <li><a href="jersey.html">Jersey</a></li>
+      <li><a href="shoes.html">Shoes</a></li>
+	  <li><a href="accessories.html">Accessories</a></li>
+     <a class="shopTitle">Running Shoes</a>
+    	<li><a href="maleRunningShoes.html">Male</a></li>
+    	<li><a href="femaleRunningShoes.html">Female</a></li>
+     <a class="shopTitle">Training</a>
+    	<li><a href="trainingmen.html">Men</a></li>
+    	<li><a href="trainingwomen.html">Women</a></li>
+		<li><a href="trainingkids.html">Kids</a></li>
+	 
+	
+    </ul>
+  </li>
+  <li><a href="contact.html" class="navcss">Contact</a></li>
+  <li><a href="cart.html" class="navcss">Cart</a></li>
+</ul>
+</div>
+
+<div class="allItems">
+<img src="img/logo.png" alt="logo" id="logo" />
+
+<div class = "whitespace">
+
+<h1 class="itemTitle">Delivery Form</h1>
+<div id="page">
+<div id="delivery-form">
+
+<form method="post" action="index.html" onsubmit="alert('Congratulation! Your order is successful!')">
+
+<div class="half left">
+Name: <span><img src="img/user.svg" alt=""></span><input type="text" name="name" id="name" placeholder="Name*" required="" oninvalid="this.setCustomValidity('Please enter your name for delivery purposes!')" oninput="setCustomValidity('')"><br><br>
+Email: <span><img src="img/envelope.svg" alt=""></span><input id="email" oninvalid="InvalidMsg(this);" name="email" oninput="InvalidMsg(this);" type="email" placeholder="you@example.com" required="required"><br><br>
+</div>
+<div class="half right">
+Company: <span><img src="img/company.svg" alt=""></span><input type="text" name="company" id="company" placeholder="Company Name"><br><br>
+Phone Number: <span><img src="img/phone.svg" alt=""></span><input type="text" name="phoneno" id="tel" placeholder="012-3456790" required="" oninvalid="this.setCustomValidity('Please enter your phone number!')" oninput="setCustomValidity('')"><br><br>
+</div>
+
+
+<div class="cont">
+Address: <span><img src="img/address.svg" alt=""></span><input type="text" name="address" id="address" placeholder="Address Line 1" required="" oninvalid="this.setCustomValidity('Please enter your address!')" oninput="setCustomValidity('')"><br><br>
+<div id="extraLine"><input type="text" name="address" class="address" placeholder="Address Line 2"><br><br>
+<input type="text" name="address" class="address" placeholder="Address Line 3"></div><br>
+</div>
+
+<div class="extra">
+<select size="1" name="state" id="state" required="" oninvalid="this.setCustomValidity('Please choose your state!')" oninput="setCustomValidity('')">
+<option value="" disabled selected hidden>State</option>
+<option>Johor</option>
+<option>Kedah</option>
+<option>Kelantan</option>
+<option>Kuala Lumpur</option>
+<option>Labuan</option>
+<option>Melaka</option>
+<option>Negeri Sembilan</option>
+<option>Pahang</option>
+<option>Perak</option>
+<option>Perlis</option>
+<option>Pulau Pinang</option>
+<option>Sabah</option>
+<option>Sarawak</option>
+<option>Selangor</option>
+<option>Terengganu</option>
+</select> &nbsp
+<input type="text" name="city" id="city" placeholder="City*" required="" oninvalid="this.setCustomValidity('Do let us know your city!')" oninput="setCustomValidity('')"> &nbsp
+<input type="text" name="postalcode" id="postalcode" placeholder="Zip Code*" required="" oninvalid="this.setCustomValidity('Please enter a zip code!')" oninput="setCustomValidity('')"><br>
+</div>
+
+<div id="checkbox">
+<input type="checkbox" value="yes">Use this as billing address<br><br>
+</div>
+
+<input type="submit" value="Confirm & Submit" class="sendBtn" title="Are you sure?"> 
+</form> 
+
+	</div>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+function InvalidMsg(textbox) {
+    
+    if (textbox.value == '') {
+        textbox.setCustomValidity('Required email address');
+    }
+    else if(textbox.validity.typeMismatch){
+        textbox.setCustomValidity('please enter a valid email address');
+    }
+    else {
+        textbox.setCustomValidity('');
+    }
+    return true;
+}
+</script>
+
+</body>
+<html>

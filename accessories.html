@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Accessories</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/dropdown.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/modal.css" />
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<img src="img/bgbike.jpg" alt="running" id = "bg" />
+
+<div id= "title">
+<div class="nav-wrapper-new">
+<ul><li><a href="index.html" class="navcss">Home</a></li>
+  <li>
+    <a class = "navcss" onclick="void(0)">
+    Shop
+</a>
+    <ul>
+    <a class="shopTitle">Football</a>
+    <li><a href="jersey.html">Jersey</a></li>
+      <li><a href="shoes.html">Shoes</a></li>
+	  <li><a href="accessories.html">Accessories</a></li>
+     <a class="shopTitle">Running Shoes</a>
+    	<li><a href="maleRunningShoes.html">Male</a></li>
+    	<li><a href="femaleRunningShoes.html">Female</a></li>
+     <a class="shopTitle">Training</a>
+    	<li><a href="trainingmen.html">Men</a></li>
+    	<li><a href="trainingwomen.html">Women</a></li>
+		<li><a href="trainingkids.html">Kids</a></li>
+	 
+	
+    </ul>
+  </li>
+  <li><a href="contact.html" class="navcss">Contact</a></li>
+  <li><a href="cart.html" class="navcss">Cart</a></li>
+</ul>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<div class="allItems">
+<img src="img/logo.png" alt="logo" id="logo" />
+<div class = "whitespace">
+<h1 class="itemTitle">Football Accessories</h1>
+<div class="items"><img class = "myImg" src="img/football.jpg" alt="Football" width="320px" height="300px">
+<h4>dSports Football</h4>
+<h4>RM 60.00</h4>
+</div>
+<div class="items"><img class = "myImg" src="img/keepinggloves.jpg" alt="Keeper Gloves" width="320px" height="300px">
+<h4>dSports Keeping Gloves</h4>
+<h4>RM 50.00</h4>
+</div>
+<div class="items"><img class = "myImg" src="img/waterbottle.jpg" alt="Water Bottle" width="320px" height="300px">
+<h4>dSports Water Bottle</h4>
+<h4>RM 12.00</h4>
+</div>
+ 
+ 
+<div class="items"><img class = "myImg" src="img/bag.jpg" alt="Football Bag" width="320px" height="300px">
+<h4>dSports Football Bag</h4>
+<h4>RM 55.00</h4>
+</div>
+
+<div class="items"><img class = "myImg" src="img/cap.jpg" alt="Cap" width="320px" height="300px">
+<h4>dSports Cap</h4>
+<h4>RM 30.00</h4>
+</div>
+<div class="items"><img class = "myImg" src="img/wristband.jpg" alt="Wrist Band" width="320px" height="300px">
+<h4>dSports Wristband</h4>
+<h4>RM 15.00</h4>
+</div></div>
+
+
+</div>
+</div>
+
+<script>// Get the modal
+var modal = document.getElementById('myModal');
+
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+</body>
+</html>

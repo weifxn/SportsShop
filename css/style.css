@@ -1,0 +1,546 @@
+.navcss {
+	color: #000;
+}
+
+.items {
+
+	z-index: 3;
+	display: inline-block;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 100px;
+
+}
+
+.formWrapper {
+	padding-top: 350px;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	position: absolute;
+	text-align: center;
+
+	-webkit-column-count: 1;
+	-moz-column-count: 1;
+	column-count: 1;
+
+	-webkit-column-width: 500px;
+	-moz-column-width: 500px;
+	column-width: 500px;
+}
+
+.allItems {
+
+	padding-top: 350px;
+
+	left: 0;
+	right: 0;
+	z-index: 3;
+	position: absolute;
+
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	-webkit-column-width: 600px;
+	-moz-column-width: 600px;
+	column-width: 600px;
+	
+}
+
+.whitespace
+{
+	width: 100%;
+	left: 0;
+	right: 0;
+	padding-top: 5cm;
+	overflow: hidden;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ffffff;
+	z-index: 0;
+	position: absolute;
+}
+
+
+#logo {
+	position: absolute;
+	height: 230px;
+	top: 230px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+
+}
+.itemTitle {
+	top: 120px;
+	position: absolute;
+	z-index: 4;
+	margin: auto;
+	left: 0;
+	right: 0;
+
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.shopTitle {
+	color: #000000;
+	text-shadow: 0 0 1px #ffffff;
+	background-color: rgba(255, 255, 255, 0.79);
+	width: 100%;
+	cursor: pointer;
+	display: inline-block;
+	padding-right: 4px;
+	position: relative;
+	text-align: center;
+}
+
+p {
+	z-index: 2;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	top: 380;
+	color: #f2f2f2;
+	text-shadow: 0 0 8px #000000;
+}
+
+#bg {
+    width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	min-width: 50%;
+}
+
+
+.navigation {
+
+	padding: 20;
+	display: inline;
+	color: #f2f2f2;
+	font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	z-index: 3;
+}
+
+.nav-wrapper {
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.85);
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	padding-top: 10;
+	padding-bottom: 10;
+	margin: -8;
+	z-index: 3;
+}
+.nav-wrapper-new {
+	z-index: 5;
+	position: fixed;
+	text-align: center;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+.quantity input { 
+	width: 50px; 
+	text-align: center;
+}
+
+.quantity { 
+	padding-left: 100px;
+}
+
+.size {
+	color: #86939E;
+}
+
+table { 
+	border: 1px solid #BFE9FC; 
+	-webkit-border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	border-radius: 10px; 
+	border-spacing: 0px;	
+}
+
+tfoot { 
+	text-align: right; 
+	line-height: 1.8; 
+}
+table th, table td { 
+	border-top: 1px solid #BFE9FC; 
+}
+
+th:first-child { 
+	border-top: none; 
+}
+
+tr { 
+	height: 120px; 
+}
+
+.product-img { 
+	width: 170px; 
+}
+
+.product-img img { 
+	width: 120px; 
+	height: 80px; 
+}
+
+.item { 
+	width: 150px;
+	line-height: 1.5em;
+}
+
+.quantity { 
+	width: 130px; 
+}
+
+.delete { 
+	width: 70px; 
+	padding-left: 20px;
+}
+
+.item-price { 
+	width: 200px; 
+	text-align: right; 
+	padding-right: 30px;
+}
+.item-price input { 
+	width: 70px; 
+	text-align: center; 
+}
+.head { 
+	height: 60px; 
+	text-align: left; 
+}
+
+.footer-description { 
+	padding-right: 30px; 
+}
+
+.footer-title { 
+	font-weight: bold; 
+}
+
+.title { 
+	padding-left: 20px; 
+}
+
+.footer-description input { 
+	width: 70px; 
+	text-align:center; 
+}
+
+.shopping-cart {
+	display: table;
+	position: relative;
+	float: right;
+	margin: 3% 17% 0 3%;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.10);
+	border-radius: 10px;
+}
+
+.checkout {
+	margin-top: 48%;
+	margin-bottom: 7%;
+}
+
+.checkout button { 
+	width: 200px; 
+	height: 40px; 
+	border: 2px solid;  
+	border-radius: 7px; 
+	background-color: #ffffff; 
+	color: #42A4FA;
+	font-weight: bolder;
+	font-size: 18px;
+	letter-spacing: 3px;
+	border-color: #BFE9FC; 
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.10);
+	cursor: pointer;
+}
+
+#delivery-form {
+	border: 1px solid #BFE9FC;
+	height: 70%;
+	width: 90%;
+	font-size: 15px;
+	background-color: rgba(47, 201, 252, 0.07);
+	border-radius: 20px;
+	margin-bottom: 3%;
+	position: relative;
+}
+
+#page {
+	width: 1100px;
+	padding: 1% 0 1% 16%;
+}
+
+#delivery-form form {
+	line-height: 1.5em;
+	text-align: left;
+	padding: 20px;
+}
+
+#delivery-form .half input {
+	border:0; outline:0;
+	background-color: white;
+	padding: .3em;
+	border-radius: 0px 8px 8px 0px;
+	font-family: 'Times New Roman', sans-serif;
+	font-size: 15px;
+	height: 32px;
+	width: 68%;
+}
+
+
+#delivery-form .half {
+	width: 48%;
+}
+
+#delivery-form .right {
+	float: right;
+	text-align: right;
+	padding-right: 4%;
+	width: 48%;
+}
+
+#delivery-form .left {
+	float: left;
+	padding-left: 2%;
+	width: 45%;
+}	
+
+.cont input {
+	width: 85%;
+	border:0; outline:0;
+	background-color: white;
+	padding: .3em;
+	border-radius: 0px 8px 8px 0px;
+	font-family: 'Times New Roman', sans-serif;
+	font-size: 15px;
+	height: 32px;
+}
+
+
+.extra input {
+	border:0; outline:0;
+	background-color: white;
+	padding: .3em;
+	font-family: 'Times New Roman', sans-serif;
+	font-size: 15px;
+	height: 32px;
+	width: 31.5%;
+	margin: 0 2% 0 5%;
+	border-radius: 8px;
+}
+
+#extraLine input {
+	margin-left: 65px;
+	width: 88%;
+	border-radius: 8px;
+}
+
+#checkbox input {
+	width: 3%;
+	height: 20px;
+	vertical-align: middle;
+}
+
+.sendBtn {
+	width: 70%;
+	cursor: pointer;
+	margin-left: 15%;
+	margin-bottom: 1%;
+	border: 2px solid #BFE9FC; 
+	border-radius: 20px; 
+	background-color: white;
+	color: #42A4FA;
+	font-weight: bolder;
+	font-size: 18px;
+	font-family: Arial, san-serif;
+	letter-spacing: 3px;
+	height: 40px;
+}	
+
+.extra {
+	padding-left: 7%;
+}
+
+.extra select {
+	color: black;
+	font-size: 15px;
+	width: 150px;
+	height: 40px;
+	border-radius: 8px;
+	border: none;
+}
+
+#checkbox {
+	padding: 2% 0 0 6.5%;
+}
+
+::-webkit-input-placeholder { 
+	color: rgba(94, 105, 109, 0.30);
+}
+
+:-moz-placeholder { 
+	color: rgba(94, 105, 109, 0.30);
+}
+
+::-moz-placeholder { 
+	color: rgba(94, 105, 109, 0.30);
+}
+
+:-ms-input-placeholder { 
+	color: rgba(94, 105, 109, 0.30);
+}
+::-ms-input-placeholder { 
+	color: rgba(94, 105, 109, 0.30);
+}
+
+
+#delivery-form img {
+	width: 20px;
+	height: 41px;
+	vertical-align: middle;
+	position: relative;
+	bottom: 1px;
+	background-color: #eeeeee;
+	border-radius: 8px 0px 0px 8px;
+	padding: 0 .5% 0 .5%;
+}
+
+#contact-form fieldset {
+	border: 2px solid #BFE9FC;
+	border-radius: 20px;
+}
+
+#container {
+	display: flex;
+	margin-left: 11.5%;
+}
+
+#container fieldset {
+	border: 2px solid #BFE9FC;
+	border-radius: 20px;
+	margin: 2%;
+	text-align: center;
+	line-height: 20px;
+	padding-bottom: 1%;
+}
+
+#contact-form #submit-button {
+		width: 70%;
+		cursor: pointer;
+		margin-left: 15%;
+		margin-bottom:2%;
+		border: 2px solid #BFE9FC; 
+		border-radius: 20px;
+		background-color: white;
+		color: #42A4FA;
+		font-weight: bolder;
+		font-size: 18px;
+		font-family: Arial, san-serif;
+		letter-spacing: 3px;
+		padding: .5em;
+}
+
+.phoneNo, .email {
+	color: #004FF9;
+	font-size: 15px;
+	letter-spacing: .2em;
+	width: 200px;
+}
+
+.phoneNo:hover {
+	color: #ff0000;
+} 
+
+.email:hover {
+	color: #ff0000;
+}
+
+.address {
+	font-size: 14px;
+	letter-spacing: .1em;
+	color: #004FF9;
+	width: 200px;
+}
+
+.address:hover {
+	color: #ff0000
+}
+
+#contact-form .half {
+	margin-bottom: 1em;
+	padding-top: 2%;
+	display: inline-block;
+	margin: 1%;
+}		
+
+#contact-form .left {
+	float: left;
+	width: 40%;
+	padding-left: 5%;
+}
+
+#contact-form .right {
+	float: right;
+	width: 45%;
+	padding-left: 5%;
+}
+
+#contact-form input, textarea {
+	border:0; outline:0;
+	padding: 1em;
+	border-radius: 8px;
+	display: block;
+	width: 85%;
+	font-family: 'Times New Roman', sans-serif;
+	font-size: 15px;
+	background-color: #f1f1f1;
+}
+
+#contact-form {
+	text-align: left;
+	padding-bottom: 5%;
+	width: 80%;
+	padding-left: 12%;
+}
+
+#contact-form label {
+	font-size: 15px;
+}
+
+#contact-form legend {
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+#contact-form select {
+	color: rgba(94, 105, 109, 0.60);
+	font-size: 15px;
+	width: 85%
+}
+
+#contact {
+	padding: 20px; 
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#message {
+	margin-left: 3%;
+	width: 93%;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Training Kids</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/dropdown.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/modal.css" />
+
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+<img src="img/bgkido.jpg" alt="running" id = "bg" />
+
+<div id= "title">
+<div class="nav-wrapper-new">
+<ul><li><a href="index.html" class="navcss">Home</a></li>
+  <li>
+    <a class = "navcss" onclick="void(0)">
+    Shop
+</a>
+    <ul>
+    <a class="shopTitle">Football</a>
+    <li><a href="jersey.html">Jersey</a></li>
+      <li><a href="shoes.html">Shoes</a></li>
+	  <li><a href="accessories.html">Accessories</a></li>
+     <a class="shopTitle">Running Shoes</a>
+    	<li><a href="maleRunningShoes.html">Male</a></li>
+    	<li><a href="femaleRunningShoes.html">Female</a></li>
+     <a class="shopTitle">Training</a>
+    	<li><a href="trainingmen.html">Men</a></li>
+    	<li><a href="trainingwomen.html">Women</a></li>
+		<li><a href="trainingkids.html">Kids</a></li>
+		
+	 
+	
+    </ul>
+  </li>
+  <li><a href="contact.html" class="navcss">Contact</a></li>
+  <li><a href="cart.html" class="navcss">Cart</a></li>
+</ul>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+
+
+
+
+
+<div class="allItems">
+<img src="img/logo.png" alt="logo" id="logo" />
+<div class = "whitespace">
+<h1 class="itemTitle">Training Kids</h1>
+<div class="items"><img class="myImg" src="img/KT1.jpg" alt="dSports Training Shirt Junior" width="320px" height="300px">
+<h4>dSports Training Shirt Junior</h4>
+<h4>RM 56.00</h4>
+<b>Select Age:</b> <select size ="1" name="jumpmenu" id="jumpmenu">
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+</select>
+</div>
+<div class="items"><img class="myImg" src="img/KT2.jpg" alt="dSports Tracksuit Junior" width="320px" height="300px">
+<h4>dSports Tracksuit Junior</h4>
+<h4>RM 90.00</h4>
+<b>Select Age:</b> <select size ="1" name="jumpmenu" id="jumpmenu">
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+</select>
+</div>
+<div class="items"><img class="myImg" src="img/KT3.jpg" alt="dSports Shorts Junior" width="320px" height="300px">
+<h4>dSports Shorts Junior</h4>
+<h4>RM 40.00</h4>
+<b>Select Age:</b> <Select Size:="1" name="jumpmenu" id="jumpmenu">
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+</select>
+</div>
+
+ 
+ 
+<div class="items"><img class="myImg" src="img/KT4.jpg" alt="dSports Socks Junior" width="320px" height="300px">
+<h4>dSports Socks Junior</h4>
+<h4>RM 15.00</h4>
+<b>Select Age:</b> <select size ="1" name="jumpmenu" id="jumpmenu">
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+</select>
+</div>
+
+<div class="items"><img class="myImg" src="img/KT5.jpg" alt="dSports Bottoms Junior" width="320px" height="300px">
+<h4>dSports Bottoms Junior</h4>
+<h4>RM 70.00</h4>
+<b>Select Age:</b> <select size ="1" name="jumpmenu" id="jumpmenu">
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+</select>
+</div>
+
+<div class="items"><img class="myImg" src="img/KT6.jpg" alt="dSports Training Set Junior" width="320px" height="300px">
+<h4>dSports Training Set Junior</h4>
+<h4>RM 100.00</h4>
+<b>Select Age:</b> <select size ="1" name="jumpmenu" id="jumpmenu">
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+</select>
+</div>
+
+</div>
+</div>
+
+<script>// Get the modal
+var modal = document.getElementById('myModal');
+
+var img = $('.myImg');
+var modalImg = $("#img01");
+var captionText = document.getElementById("caption");
+$('.myImg').click(function(){
+    modal.style.display = "block";
+    var newSrc = this.src;
+    modalImg.attr('src', newSrc);
+    captionText.innerHTML = this.alt;
+});
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+</body>
+</html>

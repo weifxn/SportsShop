@@ -111,10 +111,11 @@ p {
 }
 
 #bg {
-    width: 100%;
+    width: 1900px;
 	position: fixed;
 	top: 0;
-	left: 0;
+	transform: translate(-50%,0);
+	left: 50%;
 	z-index: -1;
 	min-width: 50%;
 }
